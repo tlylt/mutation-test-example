@@ -1,0 +1,2975 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>RegexArgument.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package sg.edu.nus.comp.cs4218.impl.util;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import sg.edu.nus.comp.cs4218.Environment;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.io.File;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.io.IOException;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.nio.file.FileSystem;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.nio.file.FileSystems;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.nio.file.Path;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.nio.file.PathMatcher;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.nio.file.Paths;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.ArrayList;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Collections;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.LinkedList;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.List;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Objects;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.regex.Pattern;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.stream.Collectors;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.print.attribute.standard.MediaSize;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import static sg.edu.nus.comp.cs4218.impl.util.StringUtils.CHAR_ASTERISK;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>@SuppressWarnings(&#34;PMD.AvoidStringBufferField&#34;)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public final class RegexArgument {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private StringBuilder plaintext;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private StringBuilder regex;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private boolean isRegex; //NOPMD</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public RegexArgument() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.plaintext = new StringBuilder();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.regex = new StringBuilder();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.isRegex = false;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public RegexArgument(String str) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_38'/>
+38
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_38'>1</a>
+<span>
+
+1. &#60;init&#62; : removed call to sg/edu/nus/comp/cs4218/impl/util/RegexArgument::merge &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        merge(str);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // Used for `find` command.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // `text` here corresponds to the folder that we want to look in.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public RegexArgument(String str, String text, boolean isRegex) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_45'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.plaintext.append(text);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.isRegex = isRegex;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.regex.append(&#34;.*&#34;); // We want to match filenames</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for (char c : str.toCharArray()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_49'/>
+49
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_49'>1</a>
+<span>
+
+1. &#60;init&#62; : negated conditional &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if (c == CHAR_ASTERISK) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>                this.regex.append(&#34;[^&#34; + StringUtils.fileSeparator() + &#34;]*&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            } else {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                this.regex.append(Pattern.quote(String.valueOf(c)));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void append(char chr) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        plaintext.append(chr);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        regex.append(Pattern.quote(String.valueOf(chr)));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_62'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void appendAsterisk() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        plaintext.append(CHAR_ASTERISK);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_64'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        regex.append(&#34;[^&#34; + StringUtils.fileSeparator() + &#34;]*&#34;); //NOPMD</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_65'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        isRegex = true;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_66'/>
+66
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_66'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_67'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_68'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void merge(RegexArgument other) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_69'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        plaintext.append(other.plaintext);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_70'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        regex.append(other.regex);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_71'/>
+71
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_71'>2</a>
+<span>
+
+1. merge : negated conditional &rarr; KILLED<br/>
+
+2. merge : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        isRegex = isRegex || other.isRegex;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_72'/>
+72
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_72'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_74'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void merge(String str) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_75'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        plaintext.append(str);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_76'/>
+76
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_76'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        regex.append(Pattern.quote(str));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_77'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_78'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_79'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public List&#60;String&#62; globFiles() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_80'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;String&#62; globbedFiles = new LinkedList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_81'/>
+81
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_81'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_82'/>
+82
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_82'>1</a>
+<span>
+
+1. globFiles : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (isRegex) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_83'/>
+83
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_83'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            String dir;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_84'/>
+84
+</td>
+<td class='uncertain'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_84'>1</a>
+<span>
+
+1. globFiles : negated conditional &rarr; TIMED_OUT<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='uncertain'>            if (this.plaintext.toString().startsWith(File.separator)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_85'/>
+85
+</td>
+<td class='uncertain'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_85'>1</a>
+<span>
+
+1. globFiles : negated conditional &rarr; TIMED_OUT<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='uncertain'>                    || Pattern.matches(&#34;^[a-zA-Z]:.*$&#34;, this.plaintext.toString())) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_86'/>
+86
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_86'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                dir = this.plaintext.toString();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_87'/>
+87
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_87'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            } else {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_88'/>
+88
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_88'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                dir = Environment.currentDirectory + File.separator + this.plaintext;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_89'/>
+89
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_89'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_90'/>
+90
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_90'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            String root = findGlobbingRoot(dir);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_91'/>
+91
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_91'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            dir = dir.replace(&#34;\\&#34;, &#34;\\\\&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_92'/>
+92
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_92'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_93'/>
+93
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_93'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            PathMatcher matcher = FileSystems.getDefault().getPathMatcher(&#34;glob:&#34; + dir);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_94'/>
+94
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_94'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            globbedFiles.addAll(traverseAndFilter(matcher, new File(root), true, false));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_95'/>
+95
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_95'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_96'/>
+96
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_96'>1</a>
+<span>
+
+1. globFiles : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (globbedFiles.isEmpty()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_97'/>
+97
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_97'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            globbedFiles.add(plaintext.toString());</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_98'/>
+98
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_98'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_99'/>
+99
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_99'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_100'/>
+100
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_100'>1</a>
+<span>
+
+1. globFiles : replaced return value with Collections.emptyList for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::globFiles &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return globbedFiles;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_101'/>
+101
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_101'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_102'/>
+102
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_102'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_103'/>
+103
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_103'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_104'/>
+104
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_104'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_105'/>
+105
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_105'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Traverses a given File node and returns a list of absolute path that match the given regexPattern.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_106'/>
+106
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_106'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * &#60;p&#62;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_107'/>
+107
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_107'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Assumptions:</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_108'/>
+108
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_108'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * - ignores files and folders that we do not have access to (insufficient read permissions)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_109'/>
+109
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_109'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * - regexPattern should not be null</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_110'/>
+110
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_110'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_111'/>
+111
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_111'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param matcher         PathMatcher object</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_112'/>
+112
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_112'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param node            File object</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_113'/>
+113
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_113'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param isAbsolute      Boolean option to indicate that the regexPattern refers to an absolute path</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_114'/>
+114
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_114'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param onlyDirectories Boolean option to list only the directories</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_115'/>
+115
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_115'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_116'/>
+116
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_116'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private List&#60;String&#62; traverseAndFilter(PathMatcher matcher, File node, boolean isAbsolute, boolean onlyDirectories) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_117'/>
+117
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_117'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;String&#62; matches = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_118'/>
+118
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_118'>3</a>
+<span>
+
+1. traverseAndFilter : negated conditional &rarr; KILLED<br/>
+
+2. traverseAndFilter : negated conditional &rarr; KILLED<br/>
+
+3. traverseAndFilter : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (matcher == null || !node.canRead() || !node.isDirectory()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_119'/>
+119
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_119'>1</a>
+<span>
+
+1. traverseAndFilter : replaced return value with Collections.emptyList for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::traverseAndFilter &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            return matches;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_120'/>
+120
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_120'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_121'/>
+121
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_121'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for (String current : Objects.requireNonNull(node.list())) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_122'/>
+122
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_122'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            File nextNode = new File(node, current);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_123'/>
+123
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_123'>1</a>
+<span>
+
+1. traverseAndFilter : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            String match = isAbsolute</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_124'/>
+124
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_124'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                    ? nextNode.getPath()</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_125'/>
+125
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_125'>1</a>
+<span>
+
+1. traverseAndFilter : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                    : nextNode.getPath().substring(Environment.currentDirectory.length() + 1);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_126'/>
+126
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_126'>2</a>
+<span>
+
+1. traverseAndFilter : negated conditional &rarr; NO_COVERAGE<br/>
+
+2. traverseAndFilter : negated conditional &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if (onlyDirectories &#38;&#38; nextNode.isDirectory()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_127'/>
+127
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_127'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>                match += File.separator;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_128'/>
+128
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_128'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_129'/>
+129
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_129'>1</a>
+<span>
+
+1. traverseAndFilter : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (matcher.matches(Path.of(match))) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_130'/>
+130
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_130'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                try {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_131'/>
+131
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_131'>1</a>
+<span>
+
+1. traverseAndFilter : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                    if (this.plaintext.toString().startsWith(File.separator)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_132'/>
+132
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_132'>1</a>
+<span>
+
+1. traverseAndFilter : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                            || Pattern.matches(&#34;^[a-zA-Z]:.*$&#34;, this.plaintext.toString())) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_133'/>
+133
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_133'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                        matches.add(nextNode.getPath());</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_134'/>
+134
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_134'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    } else {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_135'/>
+135
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_135'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                        matches.add(String.valueOf(Path.of(Environment.currentDirectory).relativize(Path.of(nextNode.getCanonicalPath()))));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_136'/>
+136
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_136'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    }</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_137'/>
+137
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_137'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>                } catch (IOException e) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_138'/>
+138
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_138'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>                    continue;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_139'/>
+139
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_139'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_140'/>
+140
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_140'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_141'/>
+141
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_141'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            matches.addAll(traverseAndFilter(matcher, nextNode, isAbsolute, onlyDirectories));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_142'/>
+142
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_142'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_143'/>
+143
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_143'>1</a>
+<span>
+
+1. traverseAndFilter : replaced return value with Collections.emptyList for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::traverseAndFilter &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return matches;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_144'/>
+144
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_144'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_145'/>
+145
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_145'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_146'/>
+146
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_146'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private String findGlobbingRoot(String path) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_147'/>
+147
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_147'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;String&#62; rootNodes = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_148'/>
+148
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_148'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String[] nodes = path.split(File.separator.replace(&#34;\\&#34;, &#34;\\\\&#34;));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_149'/>
+149
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_149'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for (String n : nodes) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_150'/>
+150
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_150'>1</a>
+<span>
+
+1. findGlobbingRoot : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (n.contains(&#34;*&#34;)) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_151'/>
+151
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_151'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_152'/>
+152
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_152'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_153'/>
+153
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_153'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            rootNodes.add(n);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_154'/>
+154
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_154'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_155'/>
+155
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_155'>1</a>
+<span>
+
+1. findGlobbingRoot : replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::findGlobbingRoot &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return String.join(File.separator, rootNodes);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_156'/>
+156
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_156'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_157'/>
+157
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_157'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_158'/>
+158
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_158'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean isRegex() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_159'/>
+159
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_159'>2</a>
+<span>
+
+1. isRegex : replaced boolean return with false for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::isRegex &rarr; SURVIVED<br/>
+
+2. isRegex : replaced boolean return with true for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::isRegex &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return isRegex;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_160'/>
+160
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_160'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_161'/>
+161
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_161'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_162'/>
+162
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_162'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean isEmpty() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_163'/>
+163
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_163'>2</a>
+<span>
+
+1. isEmpty : negated conditional &rarr; KILLED<br/>
+
+2. isEmpty : replaced boolean return with true for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::isEmpty &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return plaintext.length() == 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_164'/>
+164
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_164'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_165'/>
+165
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_165'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_166'/>
+166
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_166'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public String toString() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_167'/>
+167
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_167'>1</a>
+<span>
+
+1. toString : replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::toString &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return plaintext.toString();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_168'/>
+168
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_168'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_169'/>
+169
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_169'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_170'/>
+170
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_170'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void setIsRegex(boolean bool) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_171'/>
+171
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_171'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.isRegex = bool;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_172'/>
+172
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_172'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@64922e2f_173'/>
+173
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_173'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_38'>38</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_38'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Append]/[method:append_letterToExistingString_shouldBeStringWithLetter()]</span></span> removed call to sg/edu/nus/comp/cs4218/impl/util/RegexArgument::merge &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_49'>49</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_49'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_71'>71</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_71'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>merge<br/><b>Killed by : </b>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuotes_globbing_shouldReturnAsterisk()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>merge<br/><b>Killed by : </b>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuotes_globbing_shouldReturnAsterisk()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_82'>82</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_82'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>globFiles<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:NoDirectory]/[method:globFiles_globingOperatorAsText_shouldJustBeNormalText()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_84'>84</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_84'/> 
+
+<p class='TIMED_OUT'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>globFiles<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; TIMED_OUT</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_85'>85</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_85'/> 
+
+<p class='TIMED_OUT'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>globFiles<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; TIMED_OUT</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_96'>96</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_96'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>globFiles<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:NoDirectory]/[method:globFiles_normalTextEndingWithGlobingOperator_shouldJustBeAllNormalText()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_100'>100</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_100'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>globFiles<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:NoDirectory]/[method:globFiles_normalTextEndingWithGlobingOperator_shouldJustBeAllNormalText()]</span></span> replaced return value with Collections.emptyList for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::globFiles &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_118'>118</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_118'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>traverseAndFilter<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_globTextAtStart_shouldReturnFiles()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>traverseAndFilter<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_globTextAtStart_shouldReturnFiles()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>traverseAndFilter<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_globTextAtStart_shouldReturnFiles()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_119'>119</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_119'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>traverseAndFilter<br/><b>Killed by : </b>none</span></span> replaced return value with Collections.emptyList for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::traverseAndFilter &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_123'>123</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_123'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>traverseAndFilter<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_globTextAtStart_shouldReturnFiles()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_125'>125</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_125'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>traverseAndFilter<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_126'>126</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_126'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>traverseAndFilter<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>traverseAndFilter<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_129'>129</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_129'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>traverseAndFilter<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_globTextInMiddle_shouldReturnFiles()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_131'>131</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_131'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>traverseAndFilter<br/><b>Killed by : </b>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_WithGlobbing_ShouldDeleteAllFilesWithGlobbing()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_132'>132</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_132'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>traverseAndFilter<br/><b>Killed by : </b>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_WithGlobbing_ShouldDeleteAllFilesWithGlobbing()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_143'>143</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_143'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>traverseAndFilter<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_globTextAtStart_shouldReturnFiles()]</span></span> replaced return value with Collections.emptyList for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::traverseAndFilter &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_150'>150</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_150'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>findGlobbingRoot<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_globTextAtStart_shouldReturnFiles()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_155'>155</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_155'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>findGlobbingRoot<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_globTextAtStart_shouldReturnFiles()]</span></span> replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::findGlobbingRoot &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_159'>159</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_159'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isRegex<br/><b>Killed by : </b>none</span></span> replaced boolean return with false for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::isRegex &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isRegex<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Constructor]/[nested-class:NoArguments]/[method:regexArgument_noArguments_shouldNotBeRegex()]</span></span> replaced boolean return with true for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::isRegex &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_163'>163</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_163'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isEmpty<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Constructor]/[nested-class:NoArguments]/[method:regexArgument_noArguments_shouldHaveEmptyPlaintext()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isEmpty<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:IsEmpty]/[method:isEmpty_withText_shouldNotBeEmpty()]</span></span> replaced boolean return with true for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::isEmpty &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@64922e2f_167'>167</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@64922e2f_167'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Append]/[method:append_letterToExistingString_shouldBeStringWithLetter()]</span></span> replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/RegexArgument::toString &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>system.call.EchoSystemTest.[engine:junit-jupiter]/[class:system.call.EchoSystemTest]/[method:echo_subbedInput_ShouldPrintInputNotEntireCommand()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatCreatesFile_shouldCreateFile()] (8 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Invalid]/[method:parseAndEvaluate_pipeCommandWithStartingFailure_shouldThrowException()] (7 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:TeeIORedirectTest]/[method:tee_InputWithMultiNewlineAndOutputRedirection_ShouldReturnCorrectFileAndOutput()] (4 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:TeeIORedirectTest]/[method:tee_MultipleStreams_ShouldThrowException()] (2 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegrationComplexArguments]/[method:commandBuilder_CallCommandIntegration_sequenceCommand()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:Plaintext]/[method:resolveOneArgument_nonKeywordSymbols_shouldBeListOfOneText()] (0 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[nested-class:PipeCommandForSequenceTests]/[method:seq_FailedExecutionAtStartMiddleEnd_ShouldThrowThreeExceptions()] (11 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_RemovethenModifyThenException_ShouldStillRunFirstTwoCommand()] (6 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:TeeIORedirectTest]/[method:tee_AppendWithInputRedirection_ShouldReturnCorrectFileAndOutput()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Merge]/[nested-class:WithString]/[method:merge_nonEmptyStringWithEmptyString_shouldByNonEmptyString()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Merge]/[nested-class:WithRegexArgument]/[method:merge_emptyRegexArgumentWithExistingNonEmptyRegexArgument_shouldBeExistingNonEmptyRegexArgument()] (0 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:TeeIORedirectTest]/[method:tee_InputWithNoNewlineAndOutputRedirection_ShouldReturnCorrectFileAndOutput()] (7 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_globbedFileNotFound_shouldReturnPlainText()] (0 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[nested-class:PipeCommandForSequenceTests]/[method:seq_PipeDataThenSubCmdWithMultiLine_ShouldRunSequentially()] (8 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:SingleQuotes]/[method:singleQuotes_pipe_shouldReturnText()] (0 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:MixedQuotes]/[method:doubleQuote_SingleQuote_shouldReturnText()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_multipleNesting_shouldReturnFilesAtSpecifiedNestingLevel()] (27 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:SingleQuotes]/[method:singleQuotes_cutApp_shouldNotExecute()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Merge]/[nested-class:WithString]/[method:merge_emptyStringWithExistingNonEmptyString_shouldBeExistingNonEmptyString()] (1 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:LsIORedirectTest]/[method:ls_FilesAsOutputRedirection_ShouldEvaluate()] (5 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:UniqIORedirectTest]/[method:uniq_Stdout_ShouldEvaluate()] (3 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegrationComplexArguments]/[method:commandBuilder_CallCommandIntegration_withIORedirection(java.nio.file.Path)] (142 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:Plaintext]/[method:resolveOneArgument_singleText_shouldBeListOfOneText()] (0 ms)</li><li>system.pipe.PipeSystemTest.[engine:junit-jupiter]/[class:system.pipe.PipeSystemTest]/[method:pipe_throwExceptionAtMiddle_ShouldTerminateOutput()] (2 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:WcIORedirectTest]/[method:wc_FileWithOutputRedirection_ShouldReturnResultInFile()] (6 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:CutIORedirectTest]/[method:cut_stdoutOnly_ShouldEvaluate()] (4 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:LsIORedirectTest]/[method:ls_InputAndOutputRedirection_ShouldNotThrowException()] (4 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:TeeIORedirectTest]/[method:tee_AppendWithInputAndOutputRedirection_ShouldReturnCorrectFileAndOutput()] (3 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_StdInAndStdOutThenCreateResource_ShouldBeRunSequentially()] (3 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_StdoutThenCreateResource_ShouldBeRunSequentially()] (5 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuotes_pipe_shouldReturnText()] (0 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:CatIORedirectTest]/[method:cat_stdinFileMultiNewLineAndStdout_ShouldEvaluate()] (3 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_compositeCommand_shouldSuccessfullyExecute()] (9 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatWritesToOutputStream_shouldReadSuccessfully()] (7 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:BackQuotes]/[method:backQuotes_pipe_shouldReturnResult()] (1 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_givenFileName_ShouldDeleteFile()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:SingleQuotedArgument]/[method:singleQuotedArgument_singleText_shouldReturnListOfOneText()] (1 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_WithGlobbing_ShouldDeleteAllFilesWithGlobbing()] (5 ms)</li><li>integration.PipeCommandIT.[engine:junit-jupiter]/[class:integration.PipeCommandIT]/[method:evaluate_pipeMultipleApplicationWithNoDataPassingThrough_shouldCorrectlyCallApplications()] (6 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_pipingCommands_shouldCorrectlyPipeInputAndOutputStreams()] (7 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Invalid]/[method:parseAndEvaluate_pipeCommandWithIntermediateFailure_shouldThrowException()] (10 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Constructor]/[nested-class:NoArguments]/[method:regexArgument_noArguments_shouldHaveEmptyPlaintext()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest]/[nested-class:ApplicationArguments]/[method:evaluate_anyArgumentsCanBeGivenAndMultipleWereGiven_shouldNotThrowException()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:NoDirectory]/[method:globFiles_normalTextEndingWithGlobingOperator_shouldJustBeAllNormalText()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.ShellImplTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.ShellImplTest]/[method:parseAndEvaluate_ValidCommand_ShouldEvaluate()] (1 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_redirectOutputStream_shouldOutputCorrectly()] (6 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:SubCommandArgument]/[method:subCommandArgument_invalidAppInBackQuotes_shouldThrowShellException()] (2 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_ExceptionThenStdout_ShouldStillRunSecondCommand()] (2 ms)</li><li>system.call.EchoSystemTest.[engine:junit-jupiter]/[class:system.call.EchoSystemTest]/[method:echo_inputSymbolDelimeters_ShouldPrintInput()] (66 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:Plaintext]/[method:resolveOneArgument_textWithSpaceBetween_shouldBeListOfOneText()] (0 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:SortIORedirectTest]/[method:sort_MultipleStreams_ShouldThrowException()] (4 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatCreatesDirectory_shouldCreateDirectory()] (11 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:UniqIORedirectTest]/[method:uniq_MultipleStreams_ShouldThrowException()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_globTextAtStart_shouldReturnFiles()] (1 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_sequenceCommandWithIntermediateFailure_shouldExecuteAllAndJoinAllOutput()] (9 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Append]/[method:append_whitespaceToExistingEmptyString_shouldBeWhitespace()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_pipingCommandsWithNoIntermediateOutput_shouldCorrectlyExecute()] (9 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:CatIORedirectTest]/[method:cat_stdinAndStdout_ShouldEvaluate()] (4 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_StdInAndOutthenExceptionThenCwd_ShouldStillRunFirstThirdCommand()] (6 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:CutIORedirectTest]/[method:cut_MultipleStreams_ShouldThrowException()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Append]/[method:append_letterToExistingString_shouldBeStringWithLetter()] (0 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_DirectoryAsInputWithoutFlag_ShouldThrowException()] (1 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegrationComplexArguments]/[method:commandBuilder_CallCommandIntegration_doubleQuotes()] (4 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Invalid]/[method:parseAndEvaluate_commandWithUnknownFlag_shouldThrowException()] (5 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:NoDirectory]/[method:globFiles_text_shouldJustBePlaintext()] (0 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:ComplexNestedArgument]/[method:singleQuotedArgument_containsBackQuotesAndDoubleQuotes_shouldReturnListOfOneText()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Merge]/[nested-class:WithString]/[method:merge_emptyStringWithExistingEmptyString_shouldBeEmptyString()] (0 ms)</li><li>system.pipe.PipeSystemTest.[engine:junit-jupiter]/[class:system.pipe.PipeSystemTest]/[method:pipe_throwExceptionAtStart_ShouldTerminateOutput()] (2 ms)</li><li>system.call.EchoSystemTest.[engine:junit-jupiter]/[class:system.call.EchoSystemTest]/[method:echo_inputInQuotes_ShouldPrintInput()] (0 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:SubCommandArgument]/[method:subCommandArgument_ls_shouldReturnErrorAndSubsequentArgs()] (13 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest]/[nested-class:ApplicationArguments]/[method:evaluate_anyArgumentsCanBeGivenAndOneWasGiven_shouldNotThrowException()] (0 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:SingleQuotes]/[method:singleQuotes_simpleText_shouldReturnText()] (0 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:UniqIORedirectTest]/[method:uniq_stdinAndStdout_ShouldEvaluate()] (8 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:SortIORedirectTest]/[method:sort_stdinAndStdout_ShouldEvaluate()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Merge]/[nested-class:WithString]/[method:merge_nonEmptyStringWithExistingNonEmptyString_shouldBeBothStringsCombined()] (1 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:WcIORedirectTest]/[method:wc_MultipleStreams_ShouldThrowException()] (2 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:SortIORedirectTest]/[method:sort_stdoutOnly_ShouldEvaluate()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest]/[nested-class:Stdin]/[method:evaluate_requiresStdinAndStdinWasGiven_shouldNotThrowException()] (1 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_redirectInputStream_shouldReadCorrectly()] (7 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:BackQuotes]/[method:backQuotes_globbing_shouldReturnFiles()] (2 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:CutIORedirectTest]/[method:cut_stdinAndStdout_ShouldEvaluate()] (4 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_CwdThenPatternAsInput_ShouldBeRunSequentially()] (12 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatModifiesFiles_shouldCopySuccessfully()] (10 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:Plaintext]/[method:resolveOneArgument_textWithRightTrailingSpace_shouldBeListOfOneText()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:DoubleQuotedArgument]/[method:doubleQuotedArgument_mixedTextWithSpace_shouldReturnListOfOneText()] (1 ms)</li><li>integration.PipeCommandIT.[engine:junit-jupiter]/[class:integration.PipeCommandIT]/[method:evaluate_multipleApplicationWithDataPassingThrough_shouldCorrectlyChainInputsAndOutputs()] (5 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Append]/[method:append_numberToExistingString_shouldBeStringWithNumber()] (1 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegationWithSimpleCommands]/[method:commandBuilderCallCommandIntegration_wcFromFile_correctOutput()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:Plaintext]/[method:resolveOneArgument_whitespace_shouldBeListOfOneText()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Merge]/[nested-class:WithRegexArgument]/[method:merge_NonEmptyRegexArgumentWithExistingEmptyRegexArgument_shouldBeNonEmptyRegexArgument()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:NoDirectory]/[method:globFiles_normalTextWithGlobingOperatorAtStartAndEndAndInbetween_shouldJustBeNormalText()] (0 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegationWithSimpleCommands]/[method:commandBuilderCallCommandIntegration_echoMultipleArgument_correctOutput()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:NoDirectory]/[method:globFiles_globingOperatorAsText_shouldJustBeNormalText()] (0 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:GrepIORedirectTest]/[method:grep_MultipleStreams_ShouldThrowException()] (5 ms)</li><li>system.pipe.PipeSystemTest.[engine:junit-jupiter]/[class:system.pipe.PipeSystemTest]/[method:pipe_cmdSubAtStart_ShouldCountMatchingString()] (5 ms)</li><li>system.call.EchoSystemTest.[engine:junit-jupiter]/[class:system.call.EchoSystemTest]/[method:echo_emptyStringInput_ShouldPrintException()] (0 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegationWithSimpleCommands]/[method:commandBuilderCallCommandIntegration_echoSingleArgument_correctOutput()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_normalTextWithGlobingOperatorForFiles_shouldReturnFilesInDir()] (2 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:SingleQuotes]/[method:singleQuotes_semicolon_shouldReturnText()] (0 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:SubCommandArgument]/[method:subCommandArgument_ls_shouldReturnParsedArgs()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Constructor]/[nested-class:NoArguments]/[method:regexArgument_noArguments_shouldNotBeRegex()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_globbing_shouldResolveCorrectly()] (11 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Append]/[method:append_letterToExistingEmptyString_shouldBeLetter()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:SingleQuotedArgument]/[method:singleQuotedArgument_specialCharacters_shouldReturnListOfOneText()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Invalid]/[method:parseAndEvaluate_unknownCommand_shouldThrowException()] (5 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuotes_echoApp_shouldNotExecute()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatReadFromFiles_shouldReadSuccessfully()] (6 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest]/[nested-class:ApplicationArguments]/[method:evaluate_appNeedsZeroArgumentsButNonZeroArgumentsWasGiven_shouldThrowAbstractApplicationException()] (1 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:CatIORedirectTest]/[method:cat_FilesAsOutputRedirection_ShouldEvaluate()] (3 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:PasteIORedirectTest]/[method:paste_stdinAndStdout_ShouldEvaluate()] (5 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Constructor]/[nested-class:StringArgument]/[method:regexArgument_emptyStringArgument_shouldHaveSamePlainText()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_doubleQuotes_shouldNotInterpretSpecialSymbolsExceptBackQuote()] (9 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:SingleQuotes]/[method:singleQuotes_ioRedirection_shouldReturnText()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:SingleQuotedArgument]/[method:singleQuotedArgument_mixedTextWithSpace_shouldReturnListOfOneText()] (5 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:SingleQuotes]/[method:singleQuotes_globbing_shouldReturnAsterisk()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:Plaintext]/[method:resolveOneArgument_emptyText_shouldBeEmptyList()] (1 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:LsIORedirectTest]/[method:ls_InputRedirection_ShouldNotThrowException()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_globTextAtEnd_shouldReturnFiles()] (2 ms)</li><li>integration.PipeCommandIT.[engine:junit-jupiter]/[class:integration.PipeCommandIT]/[method:evaluate_multipleApplications_shouldCallInOrder()] (17 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:ComplexNestedArgument]/[method:doubleQuotedArgument_containsSingleAndBackQuotes_shouldReturnListOfOneText()] (18 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_globTextInMiddle_shouldReturnFiles()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest]/[nested-class:ApplicationArguments]/[method:evaluate_appNeedsZeroArgumentsAndZeroArgumentsWasGiven_shouldNotThrowException()] (0 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:CatIORedirectTest]/[method:cat_MultipleStreams_ShouldThrowException()] (4 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_CwdThenRemoveResource_ShouldDeleteFileInNewDirectory()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest]/[nested-class:ApplicationArguments]/[method:evaluate_appNeedsOneArgumentAndOneWasGiven_shouldThrowAbstractApplicationException()] (0 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:SingleQuotes]/[method:singleQuote_multipleSingleQuotes_shouldReturnText()] (0 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:EchoIORedirectTest]/[method:echo_InputRedirection_ShouldNotThrowException()] (3 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegationWithSimpleCommands]/[method:commandBuilderCallCommandIntegration_catFromFile_correctOutput()] (1 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_StdoutThenModifyResource_ShouldBeRunSequentially()] (4 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_StdInAndStdOutThenRemoveResource_ShouldBeRunSequentially()] (8 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Merge]/[nested-class:WithRegexArgument]/[method:merge_NonEmptyRegexArgumentWithExistingNonEmptyRegexArgument_shouldBeRegexArgumentWithBothAdded()] (0 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuotes_globbing_shouldReturnAsterisk()] (0 ms)</li><li>system.call.EchoSystemTest.[engine:junit-jupiter]/[class:system.call.EchoSystemTest]/[method:echo_validInputRedirectedToFile_ShouldPrintToFile(java.nio.file.Path)] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Append]/[method:append_numberToExistingEmptyString_shouldBeNumber()] (0 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:EchoIORedirectTest]/[method:echo_FilesAsOutputRedirection_ShouldEvaluate()] (6 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:TeeIORedirectTest]/[method:tee_InputWithOneNewlineAndOutputRedirection_ShouldReturnCorrectFileAndOutput()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest]/[nested-class:ApplicationArguments]/[method:evaluate_anyArgumentsCanBeGivenAndNoneWasGiven_shouldNotThrowException()] (0 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:CatIORedirectTest]/[method:cat_Stdout_ShouldEvaluate()] (5 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:IsEmpty]/[method:isEmpty_withText_shouldNotBeEmpty()] (0 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:GrepIORedirectTest]/[method:grep_stdinOnly_ShouldEvaluate()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest]/[nested-class:Stdin]/[method:evaluate_requiresStdinButNullStdinWasGiven_shouldThrowAbstractApplicationException()] (0 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_CwdThenCreateResource_ShouldBeRunSequentially()] (8 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:MixedQuotes]/[method:singleQuote_BackQuote_BQshouldBeDisabled()] (0 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegationWithSimpleCommands]/[method:commandBuilderCallCommandIntegration_catFromStdin_correctOutput()] (3 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[nested-class:PipeCommandForSequenceTests]/[method:seq_PipeEmptythenSubCmdWithSingleLineOutput_ShouldRunSequentially()] (6 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_WithNoArguments_ShouldThrowException()] (1 ms)</li><li>integration.PipeCommandIT.[engine:junit-jupiter]/[class:integration.PipeCommandIT]/[method:evaluate_pipeMultipleApplicationsWithSideEffects_shouldCorrectlyExecute()] (17 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_givenEmptyDirectory_ShouldNotDeleteWithFlag()] (6 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_StdoutThenRemoveResource_ShouldBeRunSequentially()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:DoubleQuotedArgument]/[method:doubleQuotedArgument_backQuotes_shouldReturnListOfOneText()] (1 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_redirectInputAndOutputStream_shouldReadAndWriteCorrectly()] (7 ms)</li><li>system.pipe.PipeSystemTest.[engine:junit-jupiter]/[class:system.pipe.PipeSystemTest]/[method:pipe_ioRedirectionAtStart_ShouldCountContentInFile()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:Plaintext]/[method:resolveOneArgument_numericText_shouldBeListOfOneText()] (0 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:SortIORedirectTest]/[method:sort_stdinOnly_ShouldEvaluate()] (6 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:MixedQuotes]/[method:doubleQuote_BackQuote_BQshouldNotBeDisabled()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest]/[nested-class:Stdout]/[method:evaluate_requiresStdoutButNullStdoutWasGiven_shouldThrowAbstractApplicationException()] (1 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[nested-class:PipeCommandForSequenceTests]/[method:seq_StdInOutPipeThenSubCmdWithQuotes_ShouldRunSequentially()] (3 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_FilledDirectoryAsInputWithDFlag_ShouldThrowException()] (2 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:LsIORedirectTest]/[method:ls_MultipleStreams_ShouldThrowException()] (3 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:PasteIORedirectTest]/[method:paste_stdoutOnly_ShouldEvaluate()] (3 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:SubCommandArgument]/[method:subCommandArgument_echo_shouldReturnParsedArgs()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Merge]/[nested-class:WithRegexArgument]/[method:merge_emptyRegexArgumentWithExistingEmptyRegexArgument_shouldBeEmpty()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest]/[nested-class:ApplicationArguments]/[method:evaluate_appNeedsOneArgumentButMoreThanOneWasGiven_shouldThrowAbstractApplicationException()] (1 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:WcIORedirectTest]/[method:wc_FilesAsInputRedirection_ShouldBeRegardedAsStdIn()] (5 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_sequenceCommandWithEndingFailure_shouldExecuteAllAndJoinAllOutput()] (8 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:GrepIORedirectTest]/[method:grep_stdoutOnly_ShouldEvaluate()] (3 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_StdinAndStdoutThenPatternAsInput_ShouldBeRunSequentially()] (6 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Constructor]/[nested-class:StringAndTextAndIsRegexFlagArguemnts]/[method:regexArgument_emptyText_shouldByEmpty()] (0 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegrationComplexArguments]/[method:commandBuilder_CallCommandIntegration_singleQuotes()] (1 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_sequenceCommandWithStartingFailure_shouldExecuteAllAndJoinAllOutput()] (6 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:GrepIORedirectTest]/[method:grep_stdinAndStdout_ShouldEvaluate()] (3 ms)</li><li>system.call.EchoSystemTest.[engine:junit-jupiter]/[class:system.call.EchoSystemTest]/[method:echo_validInput_ShouldPrintInput()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatModifiesWorkingDirectory_shouldModifyWorkingDirectory()] (5 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatDeletesFiles_shouldDeleteSuccessfully()] (5 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegationWithSimpleCommands]/[method:commandBuilderCallCommandIntegration_ls_correctOutput()] (1 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_givenEmptyDirectory_ShouldDeleteItWithFlag()] (7 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:NoDirectory]/[method:globFiles_normalTextWithGlobingOperatorInbetween_shouldJustBeNormalText()] (0 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:ComplexNestedArgument]/[method:doubleQuotedArgument_containsSingleQuotes_shouldReturnListOfOneText()] (0 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:TeeIORedirectTest]/[method:tee_WithOutputRedirection_ShouldReturnCorrectFileAndOutput()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:Plaintext]/[method:resolveOneArgument_textWithLeftTrailingSpace_shouldBeListOfOneText()] (1 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:EchoIORedirectTest]/[method:echo_MultipleStreams_ShouldThrowException()] (3 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_ExitThenStdout_ShouldNotRunSecondCommand()] (16 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuotes_semicolon_shouldReturnText()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Constructor]/[nested-class:StringAndTextAndIsRegexFlagArguemnts]/[method:regexArgument_NonEmptyText_shouldHaveSamePlainText()] (1 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuotes_ioRedirection_shouldReturnText()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:NoDirectory]/[method:globFiles_normalTextWithGlobingOperatorAtStartAndEnd_shouldJustBeNormalText()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_singleQuotes_shouldNotInterpretSpecialSymbols()] (6 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:DoubleQuotedArgument]/[method:doubleQuotedArgument_singleText_shouldReturnListOfOneText()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest]/[nested-class:ApplicationArguments]/[method:evaluate_unknownApplication_shouldThrowShellException()] (1 ms)</li><li>system.pipe.PipeSystemTest.[engine:junit-jupiter]/[class:system.pipe.PipeSystemTest]/[method:pipe_ioRedirectionAtStartAndEnd_ShouldSortAndOutputToFile()] (4 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegationWithSimpleCommands]/[method:commandBuilderCallCommandIntegration_wcFromStdin_correctOutput()] (1 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_StdoutThenPatternAsInput_ShouldBeRunSequentially()] (9 ms)</li><li>integration.PipeCommandIT.[engine:junit-jupiter]/[class:integration.PipeCommandIT]/[method:evaluate_singleApplication_shouldCallInOrder()] (5 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_sequenceCommandDependentCommands_shouldExecuteInSequence()] (19 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:ComplexNestedArgument]/[method:doubleQuotedArgument_containsBackQuotesAndSingleQuotes_shouldReturnListOfOneText()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:IsEmpty]/[method:isEmpty_emptyPlaintext_shouldByEmpty()] (0 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuote_multipleDoubleQuotes_shouldReturnText()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatDeletesDirectories_shouldDeleteSuccessfully()] (6 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:UniqIORedirectTest]/[method:uniq_FilesAsOutputRedirection_ShouldEvaluate()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:NoDirectory]/[method:globFiles_textStartingWithGlobingOperator_shouldJustBeNormalText()] (0 ms)</li><li>system.pipe.PipeSystemTest.[engine:junit-jupiter]/[class:system.pipe.PipeSystemTest]/[method:pipe_pipeOutputToWc_ShouldCountEchoOutput()] (2 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:ComplexNestedArgument]/[method:singleQuotedArgument_containsDoubleQuotes_shouldReturnListOfOneText()] (1 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:CatIORedirectTest]/[method:cat_stdinFileNoNewLineAndStdout_ShouldEvaluate()] (5 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:SubCommandArgument]/[method:subCommandArgument_cat_shouldReturnParsedArgs()] (15 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegrationComplexArguments]/[method:commandBuilder_CallCommandIntegration_withCommandSubstitution()] (1 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:CatIORedirectTest]/[method:cat_stdinFileOneNewLineAndStdout_ShouldEvaluate()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:IsEmpty]/[method:isEmpty_whitespace_shouldNotByEmpty()] (0 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:EchoIORedirectTest]/[method:echo_InputAndOutputRedirection_ShouldNotThrowException()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:DoubleQuotedArgument]/[method:doubleQuotedArgument_specialCharacters_shouldReturnListOfOneText()] (0 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_givenDirectoryAndContent_ShouldDeleteWithFlag()] (6 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest]/[nested-class:ApplicationArguments]/[method:evaluate_appNeedsOneArgumentButNoneWereGiven_shouldThrowAbstractApplicationException()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.CallCommandTest]/[nested-class:Stdout]/[method:evaluate_requiresStdinAndStdinWasGiven_shouldNotThrowException()] (1 ms)</li><li>system.pipe.PipeSystemTest.[engine:junit-jupiter]/[class:system.pipe.PipeSystemTest]/[method:pipe_throwExceptionAtEnd_ShouldTerminateOutput()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_normalTestWithGlobbingOperatorForDirs_shouldReturnDirsOnly()] (21 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Append]/[method:append_whitespaceToExistingString_shouldBeExistingStringWithTrailingWhitespace()] (0 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:PasteIORedirectTest]/[method:paste_stdinOnly_ShouldEvaluate()] (3 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:BackQuotes]/[method:backQuotes_semicolon_shouldReturnResult()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:Constructor]/[nested-class:StringArgument]/[method:regexArgument_emptyStringArgument_shouldNotBeRegex()] (1 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuotes_simpleTextWithSpacesAndTabs_shouldReturnText()] (0 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:SubCommandArgument]/[method:subCommandArgument_grep_shouldReturnParsedArgs()] (16 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:PasteIORedirectTest]/[method:paste_MultipleStreams_ShouldThrowException()] (3 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_sequenceCommandIndependentCommands_shouldExecuteInSequence()] (6 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.RegexArgumentTest]/[nested-class:GlobFiles]/[nested-class:WithDirectory]/[method:globFilesInDir_globTextAndDir_shouldReturnFiles()] (6 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_CwdThenModifyResource_ShouldBeRunSequentially()] (14 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:WcIORedirectTest]/[method:wc_FileWithInputAndOutputRedirection_ShouldReturnResultInFile()] (4 ms)</li><li>integration.IORedirectionIT.[engine:junit-jupiter]/[class:integration.IORedirectionIT]/[nested-class:CutIORedirectTest]/[method:cut_stdinOnly_ShouldEvaluate()] (6 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_StdinAndStdoutThenModifyResource_ShouldBeRunSequentially()] (3 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Invalid]/[method:parseAndEvaluate_pipeCommandWithEndingFailure_shouldThrowExceptionAndExecuteUpToFailure()] (9 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.11.5
+
+</body>
+</html>

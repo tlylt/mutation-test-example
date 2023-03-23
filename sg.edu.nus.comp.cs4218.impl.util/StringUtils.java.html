@@ -1,0 +1,3015 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>StringUtils.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package sg.edu.nus.comp.cs4218.impl.util;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.io.File;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.math.BigInteger;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Arrays;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Locale;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public final class StringUtils {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public static final String STRING_NEWLINE = System.lineSeparator();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final String STRING_TAB = &#34;\t&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final String STRING_CURR_DIR = &#34;.&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final String STRING_PARENT_DIR = &#34;..&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final String STRING_STD_INPUT = &#34;-&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final String STRING_RED_INPUT = &#34;&#60;&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final String STRING_RED_OUTPUT = &#34;&#62;&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final String STRING_STDIN_LBL = &#34;(standard input)&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public static final char CHAR_FILE_SEP = File.separatorChar;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final char CHAR_TAB = &#39;\t&#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final char CHAR_SPACE = &#39; &#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final char CHAR_DOUBLE_QUOTE = &#39;&#34;&#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final char CHAR_SINGLE_QUOTE = &#39;\&#39;&#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final char CHAR_BACK_QUOTE = &#39;`&#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final char CHAR_REDIR_INPUT = &#39;&#60;&#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final char CHAR_REDIR_OUTPUT = &#39;&#62;&#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final char CHAR_PIPE = &#39;|&#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final char CHAR_SEMICOLON = &#39;;&#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final char CHAR_ASTERISK = &#39;*&#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final char CHAR_FLAG_PREFIX = &#39;-&#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final char CHAR_LF = &#39;\n&#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final char CHAR_CR = &#39;\r&#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>    private StringUtils() {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Returns the file separator defined for a particular system.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Used for RegexArgument parsing only.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @return String of file separator</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static String fileSeparator() {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        // We need to escape \ in Windows...</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_44'/>
+44
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_44'>1</a>
+<span>
+
+1. fileSeparator : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (System.getProperty(&#34;os.name&#34;).toLowerCase(Locale.getDefault()).contains(&#34;win&#34;)) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_45'/>
+45
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_45'>1</a>
+<span>
+
+1. fileSeparator : replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/StringUtils::fileSeparator &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return &#39;\\&#39; + File.separator;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_47'/>
+47
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_47'>1</a>
+<span>
+
+1. fileSeparator : replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/StringUtils::fileSeparator &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return File.separator;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Check if string contains only whitespace</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param str String to be checked</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @return true under any one of the 3 conditions:</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * 1. string is null</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * 2. string is empty</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * 3. string contains only whitespace</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static boolean isBlank(String str) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_61'/>
+61
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_61'>2</a>
+<span>
+
+1. isBlank : negated conditional &rarr; KILLED<br/>
+
+2. isBlank : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (str == null || str.isBlank()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_62'/>
+62
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_62'>1</a>
+<span>
+
+1. isBlank : replaced boolean return with false for sg/edu/nus/comp/cs4218/impl/util/StringUtils::isBlank &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_64'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_65'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        boolean allWhiteSpace = true;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_66'/>
+66
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_66'>2</a>
+<span>
+
+1. isBlank : negated conditional &rarr; KILLED<br/>
+
+2. isBlank : changed conditional boundary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        for (int i = 0; i &#60; str.length(); i++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_67'/>
+67
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_67'>1</a>
+<span>
+
+1. isBlank : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (!Character.isWhitespace(str.charAt(i))) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_68'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                allWhiteSpace = false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_69'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_70'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_72'/>
+72
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_72'>2</a>
+<span>
+
+1. isBlank : replaced boolean return with false for sg/edu/nus/comp/cs4218/impl/util/StringUtils::isBlank &rarr; SURVIVED<br/>
+
+2. isBlank : replaced boolean return with true for sg/edu/nus/comp/cs4218/impl/util/StringUtils::isBlank &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return allWhiteSpace;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_74'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_75'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_76'/>
+76
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_76'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_77'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Performs c * n (as in python)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_78'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_79'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param character char to be multiplied</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_80'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param num       if num is &#60; 0, num is assumed to be 0</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_81'/>
+81
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_81'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @return String result of c * n</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_82'/>
+82
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_82'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_83'/>
+83
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_83'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static String multiplyChar(char character, int num) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_84'/>
+84
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_84'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        int length = Math.max(num, 0);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_85'/>
+85
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_85'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        char[] arr = new char[length];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_86'/>
+86
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_86'>1</a>
+<span>
+
+1. multiplyChar : removed call to java/util/Arrays::fill &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        Arrays.fill(arr, character);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_87'/>
+87
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_87'>1</a>
+<span>
+
+1. multiplyChar : replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/StringUtils::multiplyChar &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return new String(arr);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_88'/>
+88
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_88'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_89'/>
+89
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_89'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_90'/>
+90
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_90'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_91'/>
+91
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_91'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Tokenize a string delimited by whitespace</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_92'/>
+92
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_92'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_93'/>
+93
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_93'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param str String to be tokenized</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_94'/>
+94
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_94'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @return String array containing the tokens</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_95'/>
+95
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_95'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_96'/>
+96
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_96'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static String[] tokenize(String str) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_97'/>
+97
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_97'>1</a>
+<span>
+
+1. tokenize : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (isBlank(str)) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_98'/>
+98
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_98'>1</a>
+<span>
+
+1. tokenize : replaced return value with null for sg/edu/nus/comp/cs4218/impl/util/StringUtils::tokenize &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return new String[0];</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_99'/>
+99
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_99'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_100'/>
+100
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_100'>1</a>
+<span>
+
+1. tokenize : replaced return value with null for sg/edu/nus/comp/cs4218/impl/util/StringUtils::tokenize &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return str.trim().split(&#34;\\s+&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_101'/>
+101
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_101'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_102'/>
+102
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_102'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_103'/>
+103
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_103'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_104'/>
+104
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_104'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Checks if a string can be represented as a number.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_105'/>
+105
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_105'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_106'/>
+106
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_106'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param str String possibly representing a number</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_107'/>
+107
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_107'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @return true if str can be represented as a number</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_108'/>
+108
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_108'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_109'/>
+109
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_109'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static boolean isNumber(String str) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_110'/>
+110
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_110'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        BigInteger bigInt;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_111'/>
+111
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_111'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        try {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_112'/>
+112
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_112'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            bigInt = new BigInteger(str);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_113'/>
+113
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_113'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        } catch (Exception ex) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_114'/>
+114
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_114'>1</a>
+<span>
+
+1. isNumber : replaced boolean return with true for sg/edu/nus/comp/cs4218/impl/util/StringUtils::isNumber &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_115'/>
+115
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_115'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_116'/>
+116
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_116'>2</a>
+<span>
+
+1. isNumber : replaced boolean return with true for sg/edu/nus/comp/cs4218/impl/util/StringUtils::isNumber &rarr; SURVIVED<br/>
+
+2. isNumber : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return !bigInt.toString().isEmpty();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_117'/>
+117
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_117'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_118'/>
+118
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_118'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_119'/>
+119
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_119'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // Retrieved from http://www.java2s.com/Tutorial/Java/0040__Data-Type/RemovesonenewlinefromendofaStringifitsthereotherwiseleaveitalone.htm</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_120'/>
+120
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_120'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_121'/>
+121
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_121'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_122'/>
+122
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_122'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Removes one newline from end of a String if it&#39;s there,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_123'/>
+123
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_123'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * otherwise leave it alone.  A newline is &#38;quot;&#60;code&#62;\n&#60;/code&#62;&#38;quot;,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_124'/>
+124
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_124'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * &#38;quot;&#60;code&#62;\r&#60;/code&#62;&#38;quot;, or &#38;quot;&#60;code&#62;\r\n&#60;/code&#62;&#38;quot;.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_125'/>
+125
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_125'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_126'/>
+126
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_126'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * NOTE: This method changed in 2.0.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_127'/>
+127
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_127'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * It now more closely matches Perl chomp.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_128'/>
+128
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_128'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_129'/>
+129
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_129'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * &#60;pre&#62;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_130'/>
+130
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_130'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * StringUtils.chomp(null)          = null</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_131'/>
+131
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_131'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * StringUtils.chomp(&#34;&#34;)            = &#34;&#34;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_132'/>
+132
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_132'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * StringUtils.chomp(&#34;abc \r&#34;)      = &#34;abc &#34;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_133'/>
+133
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_133'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * StringUtils.chomp(&#34;abc\n&#34;)       = &#34;abc&#34;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_134'/>
+134
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_134'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * StringUtils.chomp(&#34;abc\r\n&#34;)     = &#34;abc&#34;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_135'/>
+135
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_135'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * StringUtils.chomp(&#34;abc\r\n\r\n&#34;) = &#34;abc\r\n&#34;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_136'/>
+136
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_136'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * StringUtils.chomp(&#34;abc\n\r&#34;)     = &#34;abc\n&#34;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_137'/>
+137
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_137'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * StringUtils.chomp(&#34;abc\n\rabc&#34;)  = &#34;abc\n\rabc&#34;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_138'/>
+138
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_138'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * StringUtils.chomp(&#34;\r&#34;)          = &#34;&#34;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_139'/>
+139
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_139'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * StringUtils.chomp(&#34;\n&#34;)          = &#34;&#34;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_140'/>
+140
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_140'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * StringUtils.chomp(&#34;\r\n&#34;)        = &#34;&#34;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_141'/>
+141
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_141'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * &#60;/pre&#62;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_142'/>
+142
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_142'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_143'/>
+143
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_143'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param str  the String to chomp a newline from, may be null</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_144'/>
+144
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_144'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @return String without newline, &#60;code&#62;null&#60;/code&#62; if null String input</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_145'/>
+145
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_145'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_146'/>
+146
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_146'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static String chomp(String str) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_147'/>
+147
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_147'>1</a>
+<span>
+
+1. chomp : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (isBlank(str)) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_148'/>
+148
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_148'>1</a>
+<span>
+
+1. chomp : replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/StringUtils::chomp &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return str;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_149'/>
+149
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_149'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_150'/>
+150
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_150'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_151'/>
+151
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_151'>1</a>
+<span>
+
+1. chomp : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (str.length() == 1) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_152'/>
+152
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_152'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            char character = str.charAt(0);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_153'/>
+153
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_153'>2</a>
+<span>
+
+1. chomp : negated conditional &rarr; KILLED<br/>
+
+2. chomp : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (character == CHAR_CR || character == CHAR_LF) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_154'/>
+154
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_154'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>                return &#34;&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_155'/>
+155
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_155'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_156'/>
+156
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_156'>1</a>
+<span>
+
+1. chomp : replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/StringUtils::chomp &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return str;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_157'/>
+157
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_157'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_158'/>
+158
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_158'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_159'/>
+159
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_159'>1</a>
+<span>
+
+1. chomp : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        int lastIdx = str.length() - 1;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_160'/>
+160
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_160'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        char last = str.charAt(lastIdx);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_161'/>
+161
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_161'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_162'/>
+162
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_162'>1</a>
+<span>
+
+1. chomp : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (last == CHAR_LF) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_163'/>
+163
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_163'>2</a>
+<span>
+
+1. chomp : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+2. chomp : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (str.charAt(lastIdx - 1) == CHAR_CR) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_164'/>
+164
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_164'>1</a>
+<span>
+
+1. chomp : Changed increment from -1 to 1 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                lastIdx--;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_165'/>
+165
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_165'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_166'/>
+166
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_166'>1</a>
+<span>
+
+1. chomp : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        } else if (last != CHAR_CR) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_167'/>
+167
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_167'>1</a>
+<span>
+
+1. chomp : Changed increment from 1 to -1 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            lastIdx++;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_168'/>
+168
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_168'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_169'/>
+169
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_169'>1</a>
+<span>
+
+1. chomp : replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/StringUtils::chomp &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return str.substring(0, lastIdx);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_170'/>
+170
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_170'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3486cb21_171'/>
+171
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_171'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_44'>44</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_44'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fileSeparator<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:FileSeparatorTest]/[method:fileSeparator_InLinux_ShouldReturnFileSeparator()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_45'>45</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_45'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fileSeparator<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:FileSeparatorTest]/[method:fileSeparator_InWindows_ShouldReturnExtraChar()]</span></span> replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/StringUtils::fileSeparator &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_47'>47</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_47'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fileSeparator<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:FileSeparatorTest]/[method:fileSeparator_InLinux_ShouldReturnFileSeparator()]</span></span> replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/StringUtils::fileSeparator &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_61'>61</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_61'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBlank<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsBlankTest]/[method:isBlank_StringWithCharacters_ShouldReturnFalse()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isBlank<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsBlankTest]/[method:isBlank_Null_ShouldReturnTrue()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_62'>62</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_62'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBlank<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsBlankTest]/[method:isBlank_Null_ShouldReturnTrue()]</span></span> replaced boolean return with false for sg/edu/nus/comp/cs4218/impl/util/StringUtils::isBlank &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_66'>66</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_66'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBlank<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsBlankTest]/[method:isBlank_StringWithCharacters_ShouldReturnFalse()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isBlank<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsBlankTest]/[method:isBlank_StringWithCharacters_ShouldReturnFalse()]</span></span> changed conditional boundary &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_67'>67</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_67'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBlank<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsBlankTest]/[method:isBlank_StringWithCharacters_ShouldReturnFalse()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_72'>72</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_72'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBlank<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsBlankTest]/[method:isBlank_StringWithCharacters_ShouldReturnFalse()]</span></span> replaced boolean return with true for sg/edu/nus/comp/cs4218/impl/util/StringUtils::isBlank &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isBlank<br/><b>Killed by : </b>none</span></span> replaced boolean return with false for sg/edu/nus/comp/cs4218/impl/util/StringUtils::isBlank &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_86'>86</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_86'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>multiplyChar<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:MultiplyCharTest]/[method:multiplyChar_NumIsOne_ShouldReturnOriginalCharAsString()]</span></span> removed call to java/util/Arrays::fill &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_87'>87</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_87'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>multiplyChar<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:MultiplyCharTest]/[method:multiplyChar_NumIsOne_ShouldReturnOriginalCharAsString()]</span></span> replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/StringUtils::multiplyChar &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_97'>97</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_97'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>tokenize<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:TokenizeTest]/[method:tokenize_ValidString_ShouldReturnStringArray()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_98'>98</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_98'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>tokenize<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:TokenizeTest]/[method:tokenize_EmptyString_ShouldReturnEmptyStringArray()]</span></span> replaced return value with null for sg/edu/nus/comp/cs4218/impl/util/StringUtils::tokenize &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_100'>100</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_100'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>tokenize<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:TokenizeTest]/[method:tokenize_ValidString_ShouldReturnStringArray()]</span></span> replaced return value with null for sg/edu/nus/comp/cs4218/impl/util/StringUtils::tokenize &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_114'>114</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_114'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isNumber<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsNumberTest]/[method:isNumber_EmptyString_ShouldReturnFalse()]</span></span> replaced boolean return with true for sg/edu/nus/comp/cs4218/impl/util/StringUtils::isNumber &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_116'>116</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_116'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isNumber<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsNumberTest]/[method:isNumber_Zero_ShouldReturnTrue()]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isNumber<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for sg/edu/nus/comp/cs4218/impl/util/StringUtils::isNumber &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_147'>147</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_147'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>chomp<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_EmptyString_ShouldReturnEmptyString()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_148'>148</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_148'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>chomp<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_Null_ShouldReturnEmptyString()]</span></span> replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/StringUtils::chomp &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_151'>151</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_151'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>chomp<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithMultipleCR_ShouldRemoveOneCR()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_153'>153</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_153'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>chomp<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_SingleCharacter_ShouldRemainUnchanged()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>chomp<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_SingleCharacter_ShouldRemainUnchanged()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_156'>156</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_156'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>chomp<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_SingleCharacter_ShouldRemainUnchanged()]</span></span> replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/StringUtils::chomp &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_159'>159</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_159'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>chomp<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithMultipleCR_ShouldRemoveOneCR()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_162'>162</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_162'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>chomp<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithMultipleCR_ShouldRemoveOneCR()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_163'>163</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_163'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>chomp<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithCRLF_ShouldRemoveCRLF()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>chomp<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithCRLF_ShouldRemoveCRLF()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_164'>164</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_164'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>chomp<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithCRLF_ShouldRemoveCRLF()]</span></span> Changed increment from -1 to 1 &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_166'>166</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_166'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>chomp<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithMultipleCR_ShouldRemoveOneCR()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_167'>167</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_167'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>chomp<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithMultipleCRLFNotAtEnd_ShouldRemainUnchanged()]</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3486cb21_169'>169</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3486cb21_169'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>chomp<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithMultipleCR_ShouldRemoveOneCR()]</span></span> replaced return value with &#34;&#34; for sg/edu/nus/comp/cs4218/impl/util/StringUtils::chomp &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_CwdThenRemoveResource_ShouldDeleteFileInNewDirectory()] (3 ms)</li><li>system.call.EchoSystemTest.[engine:junit-jupiter]/[class:system.call.EchoSystemTest]/[method:echo_subbedInput_ShouldPrintInputNotEntireCommand()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatCreatesFile_shouldCreateFile()] (8 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsNumberTest]/[method:isNumber_EmptyString_ShouldReturnFalse()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Invalid]/[method:parseAndEvaluate_pipeCommandWithStartingFailure_shouldThrowException()] (7 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:FileSeparatorTest]/[method:fileSeparator_InWindows_ShouldReturnExtraChar()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithLF_ShouldRemoveLF()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsBlankTest]/[method:isBlank_StringWithCharacters_ShouldReturnFalse()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest]/[method:builder_SeqCommandString_ShouldProduceSeqCommand()] (1 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:SingleQuotes]/[method:singleQuote_multipleSingleQuotes_shouldReturnText()] (0 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegrationComplexArguments]/[method:commandBuilder_CallCommandIntegration_sequenceCommand()] (3 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegationWithSimpleCommands]/[method:commandBuilderCallCommandIntegration_catFromFile_correctOutput()] (1 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuotes_globbing_shouldReturnAsterisk()] (0 ms)</li><li>system.call.EchoSystemTest.[engine:junit-jupiter]/[class:system.call.EchoSystemTest]/[method:echo_validInputRedirectedToFile_ShouldPrintToFile(java.nio.file.Path)] (4 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:CallCommands]/[method:parseCommand_callCommandWithArg_returnsCallCommand()] (1 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:SequenceCommands]/[method:parseCommand_sequenceCommandWithUnknownCommands_returnsSequenceCommand()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest]/[method:builder_PipeCommandString_ShouldProducePipeCommand()] (1 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:CallCommands]/[method:parseCommand_callCommandWithIoRedirection_returnsCallCommand()] (1 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[nested-class:PipeCommandForSequenceTests]/[method:seq_PipeDataThenSubCmdWithMultiLine_ShouldRunSequentially()] (8 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:SingleQuotes]/[method:singleQuotes_pipe_shouldReturnText()] (0 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:InvalidCommands]/[method:parseCommand_emptyInput_throwsShellException()] (1 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:MixedQuotes]/[method:doubleQuote_SingleQuote_shouldReturnText()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest]/[method:builder_commandStringWithExtraSemiColon_ShouldThrowShellException()] (0 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:SequenceCommands]/[method:parseCommand_sequenceCommandWithIntermediateAdjacentPipeCommand_returnsSequenceCommand()] (0 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:MixedQuotes]/[method:singleQuote_BackQuote_BQshouldBeDisabled()] (0 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegationWithSimpleCommands]/[method:commandBuilderCallCommandIntegration_catFromStdin_correctOutput()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithCR_ShouldRemoveCR()] (0 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_WithNoArguments_ShouldThrowException()] (1 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[nested-class:PipeCommandForSequenceTests]/[method:seq_PipeEmptythenSubCmdWithSingleLineOutput_ShouldRunSequentially()] (6 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:SingleQuotes]/[method:singleQuotes_cutApp_shouldNotExecute()] (0 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_givenEmptyDirectory_ShouldNotDeleteWithFlag()] (6 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.ArgumentResolverTest]/[nested-class:ResolveOneArgument]/[nested-class:DoubleQuotedArgument]/[method:doubleQuotedArgument_backQuotes_shouldReturnListOfOneText()] (1 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegrationComplexArguments]/[method:commandBuilder_CallCommandIntegration_withIORedirection(java.nio.file.Path)] (142 ms)</li><li>system.pipe.PipeSystemTest.[engine:junit-jupiter]/[class:system.pipe.PipeSystemTest]/[method:pipe_throwExceptionAtMiddle_ShouldTerminateOutput()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest]/[method:builder_commandStringWithExtraPipe_ShouldThrowShellException()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_redirectInputAndOutputStream_shouldReadAndWriteCorrectly()] (7 ms)</li><li>system.pipe.PipeSystemTest.[engine:junit-jupiter]/[class:system.pipe.PipeSystemTest]/[method:pipe_ioRedirectionAtStart_ShouldCountContentInFile()] (3 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuotes_pipe_shouldReturnText()] (0 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:SubCommands]/[method:parseCommand_subCommandAsItself_returnsCallCommand()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest]/[nested-class:ChangeDirectories]/[method:run_changeToCousinDirectory_shouldChangeDirectory()] (7 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_compositeCommand_shouldSuccessfullyExecute()] (9 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:MixedQuotes]/[method:doubleQuote_BackQuote_BQshouldNotBeDisabled()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest]/[nested-class:SystemPaths]/[method:run_unixDir_shouldChangeDirectory()] (4 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatWritesToOutputStream_shouldReadSuccessfully()] (7 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest]/[nested-class:SystemPaths]/[method:run_windowsFile_shouldThrowException()] (5 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[nested-class:PipeCommandForSequenceTests]/[method:seq_StdInOutPipeThenSubCmdWithQuotes_ShouldRunSequentially()] (3 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_FilledDirectoryAsInputWithDFlag_ShouldThrowException()] (2 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:BackQuotes]/[method:backQuotes_pipe_shouldReturnResult()] (1 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:PipeCommands]/[method:parseCommand_pipeCommandWithCommands_returnsPipeCommand()] (1 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_givenFileName_ShouldDeleteFile()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_Null_ShouldReturnEmptyString()] (1 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_WithGlobbing_ShouldDeleteAllFilesWithGlobbing()] (5 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsBlankTest]/[method:isBlank_Null_ShouldReturnTrue()] (0 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:SubCommandArgument]/[method:subCommandArgument_echo_shouldReturnParsedArgs()] (1 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:PipeCommands]/[method:parseCommand_pipeCommandWithNestedPipeCommandUsingSubCommands_returnsPipeCommand()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsNumberTest]/[method:isNumber_Alphabets_ShouldReturnFalse()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_pipingCommands_shouldCorrectlyPipeInputAndOutputStreams()] (7 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:MultiplyCharTest]/[method:multiplyChar_NumIsOne_ShouldReturnOriginalCharAsString()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Invalid]/[method:parseAndEvaluate_pipeCommandWithIntermediateFailure_shouldThrowException()] (10 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest]/[method:builder_commandStringWithExtraQuote_ShouldThrowShellException()] (1 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_sequenceCommandWithEndingFailure_shouldExecuteAllAndJoinAllOutput()] (8 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:CallCommands]/[method:parseCommand_callCommandWithMultipleFlag_returnsCallCommand()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.ShellImplTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.ShellImplTest]/[method:parseAndEvaluate_ValidCommand_ShouldEvaluate()] (1 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_redirectOutputStream_shouldOutputCorrectly()] (6 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithMultipleLF_ShouldRemoveOneLF()] (0 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:SubCommandArgument]/[method:subCommandArgument_invalidAppInBackQuotes_shouldThrowShellException()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest]/[nested-class:ChangeDirectories]/[method:run_changeToGrandParentDirectory_shouldChangeDirectory()] (5 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegrationComplexArguments]/[method:commandBuilder_CallCommandIntegration_singleQuotes()] (1 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_sequenceCommandWithStartingFailure_shouldExecuteAllAndJoinAllOutput()] (6 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest]/[method:builder_CallCommandString_ShouldProduceCallCommand()] (0 ms)</li><li>system.call.EchoSystemTest.[engine:junit-jupiter]/[class:system.call.EchoSystemTest]/[method:echo_validInput_ShouldPrintInput()] (0 ms)</li><li>system.call.EchoSystemTest.[engine:junit-jupiter]/[class:system.call.EchoSystemTest]/[method:echo_inputSymbolDelimeters_ShouldPrintInput()] (66 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatModifiesWorkingDirectory_shouldModifyWorkingDirectory()] (5 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatDeletesFiles_shouldDeleteSuccessfully()] (5 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegationWithSimpleCommands]/[method:commandBuilderCallCommandIntegration_ls_correctOutput()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest]/[nested-class:ChangeDirectories]/[method:run_changeToChildDirectory_shouldChangeDirectory()] (5 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest]/[method:builder_CallCommandStringWithQuotes_ShouldProduceCallCommand()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatCreatesDirectory_shouldCreateDirectory()] (11 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_givenEmptyDirectory_ShouldDeleteItWithFlag()] (7 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:SubCommands]/[method:parseCommand_subCommandAsSequence_returnsCallCommand()] (333 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:SubCommands]/[method:parseCommand_subCommandAsPipe_returnsCallCommand()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_sequenceCommandWithIntermediateFailure_shouldExecuteAllAndJoinAllOutput()] (9 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:SequenceCommands]/[method:parseCommand_sequenceCommandWithRightAdjacentPipeCommand_returnsSequenceCommand()] (1 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:CallCommands]/[method:parseCommand_callCommandWithMultipleArgs_returnsCallCommand()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_pipingCommandsWithNoIntermediateOutput_shouldCorrectlyExecute()] (9 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:CallCommands]/[method:parseCommand_callCommandWithSingleFlag_returnsCallCommand()] (0 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_StdInAndOutthenExceptionThenCwd_ShouldStillRunFirstThirdCommand()] (6 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:PipeCommands]/[method:parseCommand_pipeCommandWithUnknownCommands_returnsPipeCommand()] (0 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_DirectoryAsInputWithoutFlag_ShouldThrowException()] (1 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegrationComplexArguments]/[method:commandBuilder_CallCommandIntegration_doubleQuotes()] (4 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Invalid]/[method:parseAndEvaluate_commandWithUnknownFlag_shouldThrowException()] (5 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuotes_semicolon_shouldReturnText()] (1 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:CallCommands]/[method:parseCommand_callCommandWithoutArgs_returnsCallCommand()] (1 ms)</li><li>system.pipe.PipeSystemTest.[engine:junit-jupiter]/[class:system.pipe.PipeSystemTest]/[method:pipe_throwExceptionAtStart_ShouldTerminateOutput()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsBlankTest]/[method:isBlank_EmptyString_ShouldReturnTrue()] (1 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:SubCommands]/[method:parseCommand_subCommandAsPartOfPipe_returnsPartsOfPipeAsCallCommand()] (1 ms)</li><li>system.call.EchoSystemTest.[engine:junit-jupiter]/[class:system.call.EchoSystemTest]/[method:echo_inputInQuotes_ShouldPrintInput()] (0 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:SubCommandArgument]/[method:subCommandArgument_ls_shouldReturnErrorAndSubsequentArgs()] (13 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest]/[nested-class:ChangeDirectories]/[method:run_changeToGrandChildDirectory_shouldChangeDirectory()] (5 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:SequenceCommands]/[method:parseCommand_sequenceCommandWithCallCommands_returnsSequenceCommand()] (1 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:CallCommands]/[method:parseCommand_unknownCommand_doesNotThrowException()] (0 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuotes_ioRedirection_shouldReturnText()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsBlankTest]/[method:isBlank_StringWithCharactersAndWhitespaces_ShouldReturnFalse()] (0 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:SingleQuotes]/[method:singleQuotes_simpleText_shouldReturnText()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:FileSeparatorTest]/[method:fileSeparator_InMac_ShouldReturnFileSeparator()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_singleQuotes_shouldNotInterpretSpecialSymbols()] (6 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsNumberTest]/[method:isNumber_PositiveNumber_ShouldReturnTrue()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:MultiplyCharTest]/[method:multiplyChar_NumIsNegative_ShouldReturnEmptyString()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsBlankTest]/[method:isBlank_StringWithWhiteSpacesOnly_ShouldReturnTrue()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithMultipleCR_ShouldRemoveOneCR()] (0 ms)</li><li>system.pipe.PipeSystemTest.[engine:junit-jupiter]/[class:system.pipe.PipeSystemTest]/[method:pipe_ioRedirectionAtStartAndEnd_ShouldSortAndOutputToFile()] (4 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_redirectInputStream_shouldReadCorrectly()] (7 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:BackQuotes]/[method:backQuotes_globbing_shouldReturnFiles()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_SingleCharacter_ShouldRemainUnchanged()] (0 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_CwdThenPatternAsInput_ShouldBeRunSequentially()] (12 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithMultipleCRLF_ShouldRemoveOneCRLF()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatModifiesFiles_shouldCopySuccessfully()] (10 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegationWithSimpleCommands]/[method:commandBuilderCallCommandIntegration_wcFromStdin_correctOutput()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithCRLF_ShouldRemoveCRLF()] (0 ms)</li><li>integration.SequenceCommandIT.[engine:junit-jupiter]/[class:integration.SequenceCommandIT]/[method:seq_StdoutThenPatternAsInput_ShouldBeRunSequentially()] (9 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsNumberTest]/[method:isNumber_Zero_ShouldReturnTrue()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:FileSeparatorTest]/[method:fileSeparator_InLinux_ShouldReturnFileSeparator()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_sequenceCommandDependentCommands_shouldExecuteInSequence()] (19 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_StringWithMultipleCRLFNotAtEnd_ShouldRemainUnchanged()] (0 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:ComplexNestedArgument]/[method:doubleQuotedArgument_containsBackQuotesAndSingleQuotes_shouldReturnListOfOneText()] (1 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuote_multipleDoubleQuotes_shouldReturnText()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsNumberTest]/[method:isNumber_ChainedZeros_ShouldReturnTrue()] (0 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegationWithSimpleCommands]/[method:commandBuilderCallCommandIntegration_wcFromFile_correctOutput()] (2 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatDeletesDirectories_shouldDeleteSuccessfully()] (6 ms)</li><li>public_tests.sg.edu.nus.comp.cs4218.impl.app.CdApplicationPublicTest.[engine:junit-jupiter]/[class:public_tests.sg.edu.nus.comp.cs4218.impl.app.CdApplicationPublicTest]/[method:changeToDirectory_InvalidPath_CorrectlyChangesEnvironment()] (3 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:SequenceCommands]/[method:parseCommand_sequenceCommandWithSubCommands_returnsSequenceCommand()] (1 ms)</li><li>system.pipe.PipeSystemTest.[engine:junit-jupiter]/[class:system.pipe.PipeSystemTest]/[method:pipe_pipeOutputToWc_ShouldCountEchoOutput()] (2 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegationWithSimpleCommands]/[method:commandBuilderCallCommandIntegration_echoMultipleArgument_correctOutput()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:IsNumberTest]/[method:isNumber_NegativeNumber_ShouldReturnTrue()] (0 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:SubCommandArgument]/[method:subCommandArgument_cat_shouldReturnParsedArgs()] (15 ms)</li><li>system.pipe.PipeSystemTest.[engine:junit-jupiter]/[class:system.pipe.PipeSystemTest]/[method:pipe_cmdSubAtStart_ShouldCountMatchingString()] (5 ms)</li><li>public_tests.sg.edu.nus.comp.cs4218.impl.app.CdApplicationPublicTest.[engine:junit-jupiter]/[class:public_tests.sg.edu.nus.comp.cs4218.impl.app.CdApplicationPublicTest]/[method:changeToDirectory_ValidPath_CorrectlyChangesEnvironment()] (3 ms)</li><li>system.call.EchoSystemTest.[engine:junit-jupiter]/[class:system.call.EchoSystemTest]/[method:echo_emptyStringInput_ShouldPrintException()] (0 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegationWithSimpleCommands]/[method:commandBuilderCallCommandIntegration_echoSingleArgument_correctOutput()] (1 ms)</li><li>integration.CommandBuilderCallCommandIT.[engine:junit-jupiter]/[class:integration.CommandBuilderCallCommandIT]/[nested-class:CommandBuilderCallCommandIntegrationComplexArguments]/[method:commandBuilder_CallCommandIntegration_withCommandSubstitution()] (1 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:SingleQuotes]/[method:singleQuotes_semicolon_shouldReturnText()] (0 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:SubCommandArgument]/[method:subCommandArgument_ls_shouldReturnParsedArgs()] (2 ms)</li><li>system.call.RmSystemTest.[engine:junit-jupiter]/[class:system.call.RmSystemTest]/[method:rm_givenDirectoryAndContent_ShouldDeleteWithFlag()] (6 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:TokenizeTest]/[method:tokenize_ValidString_ShouldReturnStringArray()] (1 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_globbing_shouldResolveCorrectly()] (11 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest]/[nested-class:SystemPaths]/[method:run_unixFile_shouldThrowException()] (5 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest]/[nested-class:ChangeDirectories]/[method:run_changeToSiblingDirectory_shouldChangeDirectory()] (5 ms)</li><li>system.pipe.PipeSystemTest.[engine:junit-jupiter]/[class:system.pipe.PipeSystemTest]/[method:pipe_throwExceptionAtEnd_ShouldTerminateOutput()] (2 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Invalid]/[method:parseAndEvaluate_unknownCommand_shouldThrowException()] (5 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest]/[nested-class:ChangeDirectories]/[method:run_changeToParentDirectory_shouldChangeDirectory()] (5 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuotes_echoApp_shouldNotExecute()] (0 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_commandThatReadFromFiles_shouldReadSuccessfully()] (6 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_doubleQuotes_shouldNotInterpretSpecialSymbolsExceptBackQuote()] (9 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:BackQuotes]/[method:backQuotes_semicolon_shouldReturnResult()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:ChompTest]/[method:chomp_EmptyString_ShouldReturnEmptyString()] (0 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:SubCommands]/[method:parseCommand_subCommandAsPartOfSequence_returnsPartsOfSequenceAsCallCommand()] (1 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:SingleQuotes]/[method:singleQuotes_ioRedirection_shouldReturnText()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest]/[nested-class:SystemPaths]/[method:run_windowsDir_shouldChangeDirectory()] (6 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:DoubleQuotes]/[method:doubleQuotes_simpleTextWithSpacesAndTabs_shouldReturnText()] (0 ms)</li><li>system.call.quoting.QuotingSystemTest.[engine:junit-jupiter]/[class:system.call.quoting.QuotingSystemTest]/[nested-class:SingleQuotes]/[method:singleQuotes_globbing_shouldReturnAsterisk()] (1 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:SubCommandArgument]/[method:subCommandArgument_grep_shouldReturnParsedArgs()] (16 ms)</li><li>integration.CommandBuilderIT.[engine:junit-jupiter]/[class:integration.CommandBuilderIT]/[nested-class:SequenceCommands]/[method:parseCommand_sequenceCommandWithLeftAdjacentPipeCommand_returnsSequenceCommand()] (1 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Valid]/[method:parseAndEvaluate_sequenceCommandIndependentCommands_shouldExecuteInSequence()] (6 ms)</li><li>integration.CommandBuilderArgResolverIT.[engine:junit-jupiter]/[class:integration.CommandBuilderArgResolverIT]/[nested-class:ComplexNestedArgument]/[method:doubleQuotedArgument_containsSingleAndBackQuotes_shouldReturnListOfOneText()] (18 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:TokenizeTest]/[method:tokenize_EmptyString_ShouldReturnEmptyStringArray()] (6 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:MultiplyCharTest]/[method:multiplyChar_NumIsZero_ShouldReturnEmptyString()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.CommandBuilderTest]/[method:builder_IORedirectCommandString_ShouldProduceCallCommand()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest]/[nested-class:InvalidArguments]/[method:run_destinationDoesNotExist_shouldThrowException()] (6 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.CdApplicationTest]/[nested-class:InvalidArguments]/[method:run_destinationIsFile_shouldThrowException()] (5 ms)</li><li>integration.ShellImplIT.[engine:junit-jupiter]/[class:integration.ShellImplIT]/[nested-class:ParseAndEvaluate]/[nested-class:Invalid]/[method:parseAndEvaluate_pipeCommandWithEndingFailure_shouldThrowExceptionAndExecuteUpToFailure()] (9 ms)</li><li>sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.util.StringUtilsTest]/[nested-class:MultiplyCharTest]/[method:multiplyChar_NumIsGreaterThanOne_ShouldReturnOriginalCharAsString()] (0 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.11.5
+
+</body>
+</html>
